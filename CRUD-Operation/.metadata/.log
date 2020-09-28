@@ -1,0 +1,228 @@
+!SESSION 2020-09-24 23:22:44.763 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_241
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin -data C:\New folder (2)\In28Min\Project\Task_2\CRUD-Operation -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:22:46.168
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-09-24 23:22:46.168
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:22:46.463
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-09-24 23:22:46.463
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-09-24 23:22:50.366
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dhariyan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:22:51.739
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.sigma.samp.implementation_editor_plugin' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2020-09-24 23:22:51.764
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.security.NoSuchAlgorithmException: Error constructing implementation (algorithm: Default, provider: SunJSSE, class: sun.security.ssl.SSLContextImpl$DefaultSSLContext). ; version: 1.100.0.v20160217-0435
+!STACK 0
+java.net.SocketException: java.security.NoSuchAlgorithmException: Error constructing implementation (algorithm: Default, provider: SunJSSE, class: sun.security.ssl.SSLContextImpl$DefaultSSLContext)
+	at javax.net.ssl.DefaultSSLSocketFactory.throwException(Unknown Source)
+	at javax.net.ssl.DefaultSSLSocketFactory.createSocket(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:268)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.security.NoSuchAlgorithmException: Error constructing implementation (algorithm: Default, provider: SunJSSE, class: sun.security.ssl.SSLContextImpl$DefaultSSLContext)
+	at java.security.Provider$Service.newInstance(Unknown Source)
+	at sun.security.jca.GetInstance.getInstance(Unknown Source)
+	at sun.security.jca.GetInstance.getInstance(Unknown Source)
+	at javax.net.ssl.SSLContext.getInstance(Unknown Source)
+	at javax.net.ssl.SSLContext.getDefault(Unknown Source)
+	at javax.net.ssl.SSLSocketFactory.getDefault(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.getSystemSocketFactory(SSLConnectionSocketFactory.java:165)
+	at org.apache.http.client.fluent.Executor.<clinit>(Executor.java:76)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:96)
+	... 3 more
+Caused by: java.security.KeyStoreException: problem accessing trust store
+	at sun.security.ssl.TrustManagerFactoryImpl.engineInit(Unknown Source)
+	at javax.net.ssl.TrustManagerFactory.init(Unknown Source)
+	at sun.security.ssl.SSLContextImpl$DefaultManagersHolder.getTrustManagers(Unknown Source)
+	at sun.security.ssl.SSLContextImpl$DefaultManagersHolder.<clinit>(Unknown Source)
+	at sun.security.ssl.SSLContextImpl$DefaultSSLContext.<init>(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	... 12 more
+Caused by: java.io.IOException: Keystore was tampered with, or password was incorrect
+	at sun.security.provider.JavaKeyStore.engineLoad(Unknown Source)
+	at sun.security.provider.JavaKeyStore$JKS.engineLoad(Unknown Source)
+	at sun.security.provider.KeyStoreDelegator.engineLoad(Unknown Source)
+	at sun.security.provider.JavaKeyStore$DualFormatJKS.engineLoad(Unknown Source)
+	at java.security.KeyStore.load(Unknown Source)
+	at sun.security.ssl.TrustStoreManager$TrustAnchorManager.loadKeyStore(Unknown Source)
+	at sun.security.ssl.TrustStoreManager$TrustAnchorManager.getTrustedCerts(Unknown Source)
+	at sun.security.ssl.TrustStoreManager.getTrustedCerts(Unknown Source)
+	... 21 more
+Caused by: java.security.UnrecoverableKeyException: Password verification failed
+	... 29 more
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:22:56.977
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.sigma.samp.installation_plugin' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:22:56.988
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.sigma.samp.manualtask_plugin' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:22:56.991
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.sigma.samp.smp_common_plugin' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:22:56.991
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.sigma.samp.tag_plugin' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:22:57.001
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.sigma.samp.wfconsole_plugin' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2020-09-24 23:24:23.717 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_241
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -vm C:\Program Files (x86)\Java\jre1.8.0_241\bin
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:24:38.353
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-09-24 23:24:38.353
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:24:38.557
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-09-24 23:24:38.557
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-09-24 23:24:41.624
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\dhariyan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:24:42.982
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.sigma.samp.implementation_editor_plugin' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2020-09-24 23:24:43.067
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.security.NoSuchAlgorithmException: Error constructing implementation (algorithm: Default, provider: SunJSSE, class: sun.security.ssl.SSLContextImpl$DefaultSSLContext). ; version: 1.100.0.v20160217-0435
+!STACK 0
+java.net.SocketException: java.security.NoSuchAlgorithmException: Error constructing implementation (algorithm: Default, provider: SunJSSE, class: sun.security.ssl.SSLContextImpl$DefaultSSLContext)
+	at javax.net.ssl.DefaultSSLSocketFactory.throwException(Unknown Source)
+	at javax.net.ssl.DefaultSSLSocketFactory.createSocket(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:268)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.security.NoSuchAlgorithmException: Error constructing implementation (algorithm: Default, provider: SunJSSE, class: sun.security.ssl.SSLContextImpl$DefaultSSLContext)
+	at java.security.Provider$Service.newInstance(Unknown Source)
+	at sun.security.jca.GetInstance.getInstance(Unknown Source)
+	at sun.security.jca.GetInstance.getInstance(Unknown Source)
+	at javax.net.ssl.SSLContext.getInstance(Unknown Source)
+	at javax.net.ssl.SSLContext.getDefault(Unknown Source)
+	at javax.net.ssl.SSLSocketFactory.getDefault(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.getSystemSocketFactory(SSLConnectionSocketFactory.java:165)
+	at org.apache.http.client.fluent.Executor.<clinit>(Executor.java:76)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:96)
+	... 3 more
+Caused by: java.security.KeyStoreException: problem accessing trust store
+	at sun.security.ssl.TrustManagerFactoryImpl.engineInit(Unknown Source)
+	at javax.net.ssl.TrustManagerFactory.init(Unknown Source)
+	at sun.security.ssl.SSLContextImpl$DefaultManagersHolder.getTrustManagers(Unknown Source)
+	at sun.security.ssl.SSLContextImpl$DefaultManagersHolder.<clinit>(Unknown Source)
+	at sun.security.ssl.SSLContextImpl$DefaultSSLContext.<init>(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	... 12 more
+Caused by: java.io.IOException: Keystore was tampered with, or password was incorrect
+	at sun.security.provider.JavaKeyStore.engineLoad(Unknown Source)
+	at sun.security.provider.JavaKeyStore$JKS.engineLoad(Unknown Source)
+	at sun.security.provider.KeyStoreDelegator.engineLoad(Unknown Source)
+	at sun.security.provider.JavaKeyStore$DualFormatJKS.engineLoad(Unknown Source)
+	at java.security.KeyStore.load(Unknown Source)
+	at sun.security.ssl.TrustStoreManager$TrustAnchorManager.loadKeyStore(Unknown Source)
+	at sun.security.ssl.TrustStoreManager$TrustAnchorManager.getTrustedCerts(Unknown Source)
+	at sun.security.ssl.TrustStoreManager.getTrustedCerts(Unknown Source)
+	... 21 more
+Caused by: java.security.UnrecoverableKeyException: Password verification failed
+	... 29 more
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:24:47.692
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.sigma.samp.installation_plugin' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:24:47.704
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.sigma.samp.manualtask_plugin' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:24:47.707
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.sigma.samp.smp_common_plugin' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:24:47.708
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.sigma.samp.tag_plugin' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 2 0 2020-09-24 23:24:47.719
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.sigma.samp.wfconsole_plugin' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
